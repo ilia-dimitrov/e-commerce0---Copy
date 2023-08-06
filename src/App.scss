@@ -1,0 +1,21 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.App {
+  height: 100vh;
+
+  overflow-y: auto;
+
+  .main-content {
+    display: flex;
+    flex: 1;
+  }
+
+  @media (min-width: 701px) {
+    .main-content {
+      padding-top: 65px;
+    }
+  }
+}

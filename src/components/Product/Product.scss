@@ -1,0 +1,93 @@
+.cardContainer {
+  margin-right: 10px;
+  min-width: 300px;
+}
+
+.cardContainer {
+  max-width: 150px;
+
+  .card {
+    margin-bottom: 20px;
+    border: 2px solid #ededed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+
+    .cardDetails {
+      display: flex;
+      flex-direction: column;
+      justify-content: right;
+      min-width: 250px;
+    }
+
+    cursor: pointer;
+  }
+  .cardImg {
+    width: 13rem;
+    margin-bottom: 5px;
+  }
+  .cardTitle {
+    margin-bottom: 10px;
+  }
+  .cardStars {
+    margin-bottom: 5px;
+    display: flex;
+  }
+  .ratingStar {
+    color: #d5ab55;
+  }
+  .ratingTotal {
+    font-size: 0.9rem;
+    margin-left: 10px;
+  }
+  .cardPrice {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .price {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      min-width: 120px;
+    }
+    .discount {
+      color: grey;
+      text-decoration: line-through;
+    }
+    .lastPrice {
+      color: #ef2809;
+    }
+  }
+  .bagIcon {
+    color: #535353;
+  }
+}
+.filterItem {
+  margin-top: 130px;
+}
+
+.bagIcon {
+  font-size: 1.5rem;
+  color: #535353;
+  transition: all 0.2s ease;
+
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.bagIcon:hover {
+  transform: scale(1.2);
+}
+.bagIcon.added {
+  animation: showCartAlert 1.5s ease;
+}
+
+@keyframes showCartAlert {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
