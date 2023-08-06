@@ -19,7 +19,7 @@ cd your-repo
 
 Install dependencies:
 npm install
-# or
+or
 yarn
 
 Running the App
