@@ -3,13 +3,11 @@ import { AiFillStar } from "react-icons/ai";
 import { BsStarHalf, BsFillBagHeartFill } from "react-icons/bs";
 import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css"; // Import the CSS file for styling
-
 import "./Product.scss";
+
 const Product = ({ item }) => {
-  // console.log(item);
   let model = item.name.split(" ").slice(0, 2).join(" ");
   let ratingStars = item.rating;
-  // console.log(ratingStars);
   let rating = item.rating.toFixed(1);
   const [addedToCart, setAddedToCart] = useState(false);
 
